@@ -6,9 +6,9 @@
  * Return: 1 if character is alphabetical, otherwise it returns a 0
  */
 
-int _isalpha(int c);
+int _isalpha(int c)
 {
-	if (c >= 'A' && c<= 'z')
+	if (c >= 'A' && c <= 'Z' || c >= 'a' && <= 'z')
 	{
 		return (1);
 	}
@@ -16,6 +16,4 @@ int _isalpha(int c);
 	{
 		return (0);
 	}
-
-
 }
