@@ -5,7 +5,6 @@
  *
  * Return: numbers are printed from 0 through to 9 followed by a newline
  */
-int _putchar(char c);
 
 void print_numbers(void)
 {
