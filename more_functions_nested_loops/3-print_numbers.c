@@ -5,9 +5,11 @@
  *
  * Return: numbers are printed from 0 through to 9 followed by a newline
  */
-void print numbers(void)
+
+void print_numbers(void)
 {
-int n;
+
+	int n;
 
 for (n = '0'; n <= '9'; n++)
 {
