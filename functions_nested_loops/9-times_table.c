@@ -5,7 +5,7 @@
  *
  * Return: void
  */
-void times_table(void);
+void times_table(void)
 {
 	int row, col, prod;
 
@@ -38,3 +38,4 @@ void times_table(void);
 		}
 	_putchar('\n');
 	}
+}
