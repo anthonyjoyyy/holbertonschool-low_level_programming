@@ -3,7 +3,7 @@
  * _strncat - joining two strings together
  * @dest: first string
  * @src: second string
- *
+ * @n: characters
  * Return: dest will become the full string
  */
 char *_strncat(char *dest, char *src, int n)
