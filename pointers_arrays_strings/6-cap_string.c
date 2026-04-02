@@ -1,28 +1,35 @@
 #include "main.h"
-/*
- * cap_string - capitalizes all new words
+
+/**
+ * cap_string - capitalizes all words of a string
+ * @str: the string to modify
  *
- * @str: string to capitalize
- *
- * Return: a string with the first letter of each word beginning with a capital
+ * Return: the modified string
  */
 char *cap_string(char *str)
 {
-	char str;
 	int i = 0;
 
-
-		while (str[i] != '\0')
+	if (str[i] >= 'a' && str[i] <= 'z')
 	{
-		if (str[i] == ' ' || '\t' || '\n' || ',' || ';' || '.' || '!' || '?' || '"' || '(' || ')' || '{' || '}')
+		str[i] = str[i] - 32;
+	}
+
+	while (str[i] != '\0')
+	{
+		if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' ||
+		    str[i] == ',' || str[i] == ';' || str[i] == '.' ||
+		    str[i] == '!' || str[i] == '?' || str[i] == '"' ||
+		    str[i] == '(' || str[i] == ')' || str[i] == '{' ||
+		    str[i] == '}')
 		{
+			if (str[i + 1] >= 'a' && str[i + 1] <= 'z')
 			{
-				if (str[i + 1] >= 'a' && str[i + 1] <= 'z')
+				str[i + 1] = str[i + 1] - 32;
 			}
-			str[i + 1] = str[i + 1] - 32;
 		}
 		i++;
 	}
 
-Return: (str);
+	return (str);
 }
