@@ -1,7 +1,7 @@
-include "main.h"
+#include "main.h"
 
 /*
- * leet - checking decoder
+ * leet - encodes a string into 1337
  * @s - string to modify
  *
  * return: modified string
